@@ -1,0 +1,4 @@
+cron:
+- description: daily summary job
+  url: /traffictime
+  schedule: every 60 minutes from 02:31 to 17:32

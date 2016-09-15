@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light" >
+    
+     <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+    <FrameLayout
+                android:id="@+id/frameLayout2"
+                style="@style/nowCardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/frameLayout1"
+                android:minHeight="100dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/text_Home"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_dark" />
+
+                <TextView
+                    android:id="@+id/homeLocationTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="onHomeLocationClick"
+                    android:text="@string/home_location"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_lightest" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout3"
+                style="@style/nowCardStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/frameLayout2"
+                android:minHeight="100dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/text_Work"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/text_darkest" />
+
+                <TextView
+                    android:id="@+id/workLocationTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="onWorkLocationClick"
+                    android:text="@string/home_location"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/text_lightest" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Add Route" />
+
+            </LinearLayout>
+     </RelativeLayout>     
